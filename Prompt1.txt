@@ -1,0 +1,24 @@
+Projeto Space A.P.I
+
+construa um programa com front-end em vue.js,vuetify,vue-router e pinia.
+Backend em Flask - Flask-SQLAlchemy como banco de dados, blueprint para rotas,
+flask jwt para autenticação e proteção de rotas. 
+
+Página inicial:
+
+Título e logo: Space A.P.I
+Mensagem de boas vindas e apresentação do Projeto
+
+Botões onde o usuário será redirecionado para as Rotas de A.P.I que eu irei citar.
+
+Rotas de A.P.I:
+
+Para cada botão, quando clicado, o usuário será redirecionado para uma página que consome
+dados de uma api de Agências Espaciais. 
+
+Por enquanto, quero que as rotas renderizam IMAGENS informativas sobre as maravilhas
+do nosso universo. Peqsuise esses endpoint para saber como você fará para renderizar. 
+Exemplo: APOD da nasa, que mostra a imagem astronômica do dia. 
+Se for necessário criar uma chave da api para cada uma das rotas, perquise-as primeiro e monte
+todo o esqueleto necessário, assim só faltará a chave de api para renderizar os dados corretamente
+
