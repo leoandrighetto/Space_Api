@@ -1,0 +1,13 @@
+Correção do CSS
+
+Corrija o Layout da página inicial.
+
+Corrija o espaçamento do Header. 
+
+Vuetify:
+
+Adicione um app-nav-bar vazio, apenas com o título Space A.P.I, por enquanto
+
+Quanto ao Header, quero apenas que dê mais espaçamento, o layout em si estava bom, mas os itens estavam colados.
+
+Quanto aos endpoints, preciso que me mande a url de cada chave de api que necessito criar.

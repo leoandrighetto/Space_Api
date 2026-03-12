@@ -1,9 +1,10 @@
 <template>
-  <v-container class="py-10">
-    <div class="d-flex align-center justify-space-between">
-      <h2>APOD - Astronomy Picture of the Day</h2>
+  <v-container class="py-10 page-wrap">
+    <div class="page-top">
+      <v-btn variant="text" class="back-btn" @click="goBack">Voltar</v-btn>
       <v-btn variant="outlined" color="secondary" @click="fetchApod">Atualizar</v-btn>
     </div>
+    <h2 class="page-title">APOD - Astronomy Picture of the Day</h2>
 
     <v-alert v-if="error" type="error" variant="tonal" class="mt-4">
       {{ error }}
@@ -32,10 +33,12 @@
 
 <script setup>
 import { onMounted, ref } from "vue";
+import { useRouter } from "vue-router";
 import api from "../services/api";
 
 const apod = ref(null);
 const error = ref("");
+const router = useRouter();
 
 const fetchApod = async () => {
   error.value = "";
@@ -45,6 +48,10 @@ const fetchApod = async () => {
   } catch (err) {
     error.value = err.response?.data?.error || "Falha ao carregar APOD";
   }
+};
+
+const goBack = () => {
+  router.back();
 };
 
 onMounted(fetchApod);
